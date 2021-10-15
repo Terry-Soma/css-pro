@@ -1,0 +1,77 @@
+@import "compass/css3";
+@import url("https:/fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+.text {
+  fill: none;
+  stroke-width: 6;
+  text-transform: uppercase;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  stroke: #e35465;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+  stroke: #f5a503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #fafcf8;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #43f0e1;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #d74ef0;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+/* @-webkit-keyframes {
+  100% {
+    stroke-dashoffset: -400;
+  }
+} */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  background-size: 0.2em 100%;
+  font: 14.5em/1 Open sans, Impact;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+svg {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+}
+.heading {
+  font-size: 25px;
+  font-family: Segoe Script;
+  margin-top: 100px;
+  text-decoration: none;
+  color: #fafcf8;
+}
